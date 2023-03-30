@@ -1,19 +1,19 @@
-<mxfile host="app.diagrams.net" modified="2023-03-30T03:45:25.177Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="2ohrXWRjAcZ4WQXui0uF" version="21.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-30T07:10:49.449Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="ReiWeIJq4ep2LFT67BS9" version="21.1.2" type="github">
   <diagram name="第 1 页" id="jQVPsj15WsTQjWok6gXP">
-    <mxGraphModel dx="794" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="587" dy="523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="afdooJfP-64KZLnxz3o7-1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint y="160" as="sourcePoint" />
-            <mxPoint x="826" y="160" as="targetPoint" />
+            <mxPoint x="8" y="160" as="sourcePoint" />
+            <mxPoint x="818" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="afdooJfP-64KZLnxz3o7-2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint y="760" as="sourcePoint" />
-            <mxPoint x="826" y="760" as="targetPoint" />
+            <mxPoint x="1" y="760" as="sourcePoint" />
+            <mxPoint x="821" y="760" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="afdooJfP-64KZLnxz3o7-3" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
@@ -75,6 +75,54 @@
         </mxCell>
         <mxCell id="afdooJfP-64KZLnxz3o7-21" value="AQS 框架" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;flipV=1;flipH=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="160" y="1120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-22" value="①为啥实现线程的方式本质上只有一种？&lt;br&gt;②如何正确停止线程？用 volatile 标记位的停止方法有啥不足？&lt;br&gt;③线程生命周期中的6种状态之间的转换？&lt;br&gt;④为什么 wait 方法必须在 synchronized 保护的同步代码中使用？&lt;br&gt;⑤为什么 wait / notify / notifyAll 被定义在 Object 类中，而 sleep 定义在 Thread 类中？&lt;br&gt;⑥分别用 wait / notify、Condition、BlockingQueue 的方式实现生产者消费者模式" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#E6FFCC;" vertex="1" parent="1">
+          <mxGeometry x="307.5" width="460" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-23" value="①什么是线程安全？线程不安全的场景？包括运行结果错误、发布或初始化错误以及活跃性问题，而活跃性问题又包括死锁、活锁和饥饿。&lt;br&gt;②注意线程安全的情况：操作共享资源或变量时；依赖时序的操作；不同数据间存在绑定关系；使用的类没声明自己是线程安全的。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#CCFFE6;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="90" width="460" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-24" value="使用线程池的好处？&lt;br&gt;线程池的各个参数及含义？&lt;br&gt;线程池拒绝任务的几种拒绝策略？&lt;br&gt;常见有哪些线程池？&lt;br&gt;阻塞队列有哪些？" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFCC;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="162" width="182.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-25" value="怎么设置线程池的参数合理？&lt;br&gt;关闭线程池的方法有哪些？&lt;br&gt;怎么合理关闭线程池？&lt;br&gt;execute方法源码？" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFCC;" vertex="1" parent="1">
+          <mxGeometry x="530" y="162" width="182.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-26" value="&lt;b&gt;悲观锁、乐观锁&lt;/b&gt;；共享锁、独占锁；&lt;b&gt;公平锁、非公平锁&lt;/b&gt;；&lt;b&gt;可重入锁、非可重入锁&lt;/b&gt;；&lt;br&gt;可中断锁、不可中断锁；&lt;b&gt;自旋锁、非自旋锁&lt;/b&gt;；偏斜锁、轻量级锁、重量级锁；使用场景？&lt;br&gt;synchronized 关键字？与 Lock比较？读写锁（读读共享、其他均互斥）&lt;br&gt;什么是自旋锁？优点？使用场景？JVM 对锁进行的优化点，包括自适应的自旋锁、锁消除、锁粗化、偏向锁、轻量级锁、重量级锁等。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#CCE5FF;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="242" width="472.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-27" value="&lt;b&gt;HashMap为啥线程不安全？&lt;br&gt;对比 ConcurrentHashMap 在 Java7与8的区别？与Hashtable对比？&lt;br&gt;CopyOnWriteArrayList使用场景（读多写少）&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#CCFFFF;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="321" width="472.5" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-28" value="什么是阻塞队列？队列中的哪3组方法？&lt;br&gt;常见5中阻塞队列？（ArrayBlockingQueue、LinkedBlockingQueue、SynchronousQueue、PriorityBlockingQueue 和 DelayQueue）&lt;br&gt;阻塞队列并发安全原理：主要利用了 ReentrantLock 以及它的 Condition 来实现；&lt;br&gt;非阻塞队列并发安全原理：利用 CAS 保证线程安全。&lt;br&gt;如何选择适合自己的阻塞队列？从功能、容量、能否扩容、内存结构及性能这些方面去考虑" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFE6CC;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="370" width="492.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-29" value="6种原子类：基本类型原子类、数组类型原子类、引用类型原子类、升级类型原子类、Adder 和 Accumulator。&lt;br&gt;AtomicInteger 在高并发下性能不好以及如何解决？使用 LongAdder 来解决这个问题；&lt;br&gt;LongAdder 内部的原理，对比了原子类和 volatile（可见性问题）&lt;br&gt;原子类与synchronized对比？" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFCCCC;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="460" width="492.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-30" value="ThreadLocal使用场景：用作&lt;b&gt;每个线程保存独享的对象&lt;/b&gt;，比如日期工具类；ThreadLocal 给每个线程去&lt;b&gt;保存场景、上下文信息&lt;/b&gt;，以便后续的方法更方便的获取其信息，避免了传参。&lt;br&gt;它只是在每个线程内有个资源的副本而已，而每个副本都是各线程独享的。&lt;b&gt;Thread、ThreadLocal 及 ThreadLocalMap&lt;/b&gt; 三者之间的关系，使用 &lt;b&gt;remove&lt;/b&gt; 方法来防止内存泄漏" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFCCFF;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="540" width="492.5" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-31" value="对比Callable与Runable？与Future类关系？Future主要功能：把运算的过程放到子线程去执行，再通过 Future 去控制执行过程，最后获取到计算结果。提高运行效率（&lt;b&gt;异步&lt;/b&gt;思想）&lt;br&gt;使用 Future 时注意，如用 for 循环批量获取 Future 的结果时容易&lt;b&gt;阻塞&lt;/b&gt;，应该使用超时限制" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="605" width="492.5" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-32" value="&lt;b&gt;Semaphore 信号量&lt;/b&gt;：使用场景？用法？注意点？信号量是支持跨线程、跨线程池的&lt;br&gt;&lt;b&gt;CountDownLatch&lt;/b&gt;：在构造函数传入“倒数”次数，由需要等待的线程去调用 await 方法来等待&lt;br&gt;&lt;b&gt;CyclicBarriar&lt;/b&gt;：与前者对比，用法相似，作用对象、可重用性不同及执行动作的能力不同。&lt;br&gt;&lt;b&gt;Condition&lt;/b&gt;：和 wait / notify / notifyAll 的关系？如果说 Lock 是用来代替 synchronized 的，那么 Condition 就是用来代替相对应的 Object 的 wait / notify / notifyAll 的" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFE599;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="660" width="492.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-33" value="什么是 &lt;b&gt;Java 内存模型&lt;/b&gt;？什么是&lt;b&gt;重排序&lt;/b&gt;？什么是&lt;b&gt;原子性&lt;/b&gt;？java中的原子操作有哪些？long和double原子性的特殊性？什么是&lt;b&gt;可见性&lt;/b&gt;？（前一个操作的结果在第二个操作执行时可见）&lt;br&gt;&lt;b&gt;volatile&lt;/b&gt;2个作用：&lt;b&gt;保证可见性&lt;/b&gt;以及一定程度上&lt;b&gt;禁止重排序&lt;/b&gt;。&lt;br&gt;在单例模式的双重检查锁模式为什么必须加 volatile ？主要是为了&lt;b&gt;保证线程安全&lt;/b&gt;。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFCCFF;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="785.5" width="492.5" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-34" value="CAS（Compare-And-Swap）核心思想：通过将&lt;b&gt;内存中的值&lt;/b&gt;与&lt;b&gt;指定数据&lt;/b&gt;进行&lt;b&gt;&lt;font color=&quot;#ffffff&quot;&gt;比较&lt;/font&gt;&lt;/b&gt;，当这两个&lt;b&gt;数值一样&lt;/b&gt;时，才将内存中的数据&lt;b&gt;&lt;font color=&quot;#ffffff&quot;&gt;替换&lt;/font&gt;&lt;/b&gt;为新的值，整个过程具备&lt;b&gt;原子性&lt;/b&gt;。&lt;br&gt;CAS应用：&lt;b&gt;并发容器&lt;/b&gt;、&lt;b&gt;数据库&lt;/b&gt;以及&lt;b&gt;原子类&lt;/b&gt;中应用。&lt;br&gt;CAS缺点：&lt;b&gt;ABA 问题&lt;/b&gt;、&lt;b&gt;自旋时间过长&lt;/b&gt;问题，以及&lt;b&gt;线程安全的范围不能灵活控制&lt;/b&gt;问题。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FF9999;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="865" width="492.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-35" value="什么是&lt;b&gt;死锁&lt;/b&gt;？两个或多个线程（或进程）被无限期地阻塞，相互等待对方手中资源的状态就是死锁。&lt;br&gt;死锁&lt;b&gt;4个条件&lt;/b&gt;？互斥条件、请求与保持条件、不剥夺条件和循环等待条件。&lt;br&gt;3种解决死锁的策略：避免策略、检测与恢复策略、鸵鸟策略。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFCCE6;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="945" width="492.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-36" value="final用在变量上、方法上、类上的作用？&lt;br&gt;为什么加了 final 却依然无法拥有“不变性”？主要原因是 &lt;b&gt;final 修饰的对象&lt;/b&gt;，&lt;b&gt;内容依然可以变&lt;/b&gt;。&lt;br&gt;为什么 String 被设计为是不可变的？好处分别是可以利用字符串常量池、用作 HashMap 的 key、缓存 HashCode 以及保证线程安全。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFCCFF;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="1025" width="492.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="afdooJfP-64KZLnxz3o7-37" value="为什么需要 AQS 以及它内部的原理是怎样的？&lt;br&gt;AQS 在 CountDownLatch 类中是如何应用的？" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFCCCC;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="1120" width="492.5" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
